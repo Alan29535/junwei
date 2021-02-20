@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+/* header end*/
+
+
+
+#logo{
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    float: left;
+}
+
+.try{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    
+}
+
+header nav{
+    float: right;
+}
+
+.nav_links{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.item{
+    list-style: none;
+}
+
+.item a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li{
+    list-style: none;
+    text-align: center;
+    display: block;
+}  
+.submenu{
+    margin: 0;
+    padding: 0;
+    min-width: 100%; /* Set width of the dropdown */
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    background: #262626;
+}
+.submenu a{
+    padding:0;
+}
+.nav_links .item{
+    position: relative;
+}
+.nav_links .item:hover .submenu{
+    display: block; /* Display the dropdown */
+    
+}
+.item a:hover,
+.item a.active{
+    color: #fff;
+    background: #2196f3;
+}
+
+.menu-toggle{
+    
+    display: none;
+}
+
+@media(max-width:991px){
+    header{
+        padding:0 20px;
+    }
+    .menu-toggle{
+        display:block;
+        color: #fff;
+        float: right;
+        line-height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    
+    header nav.active{
+        left: 0;
+    }
+    nav{
+        
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    .nav_links{
+        display: block;
+        text-align: center;
+    }
+    .item a{
+        border-bottom: 1px solid rgba(0,0,0,.2)
+    }
+}
+/* head end*/
+
+
+
+/*start-section start*/
+
+.center{
+    width:100%;
+    height: 500px;
+    top: 50px;
+    background-image: url(background/start.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+.center H2{
+  
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 13%;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+.center H1{
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind', sans-serif;
+    font-size: 70px;
+    color: #fff;
+    padding-top: -40px;
+}
+
+:root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section2{
+   height: 2000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
